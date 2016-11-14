@@ -71,9 +71,7 @@ if (Nexus['loaded']) {
             },
             
             findUser:function(type, term){
-                //data = {
-                //  (id|username): (int|string)
-                //}
+                //arguments: ("id" OR "username"[default]), (int[if type=="id"] OR string[if type=="username"])
                 //invalid or no match returns false
                 type = type.toLowerCase();
                 
@@ -118,6 +116,7 @@ if (Nexus['loaded']) {
                                         }
                                         return '<img class="nexus-chat-img cimg" src="'+link+'">';
                                     } catch (g) {
+                                        //wait what?
                                         return g;
                                     }
                                 })
