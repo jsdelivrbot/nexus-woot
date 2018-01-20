@@ -1,2 +1,2 @@
-# plugdj-nexus
-slowly growing personal userscript with a very small amount of features
+# Nexus Woot
+Translated into Bosnian language, for more info contact the script developer.
