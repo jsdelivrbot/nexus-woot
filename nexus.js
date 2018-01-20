@@ -280,7 +280,7 @@ if (Nexus['loaded']) {
                 
                 var varStr = {
                     "saveChatAmount":{name:"Sacuvaj poruke: ", min:0, max:512},
-                    "MAXMESSAGES":{name:"Maximalno cuvaj: ", min:1, max:512}
+                    "MAXMESSAGES":{name:"Maximalno poruka na chatu: ", min:1, max:512}
                 };
                 
                 var makeToggle = function(str, psk, state) { //setting string, internal name for it (Nexus.ps.???), true/false
