@@ -5,7 +5,7 @@ if (Nexus === undefined)
 if (Nexus['loaded']) {
     console.error('Nexus failed to load, because it has already been loaded once during this session.');
 } else {
-    $('head').append('<link class="darkcss" href="https://cdn.rawgit.com/zeratul0/plugdj-dark-theme/master/nexus.css" type="text/css" rel="stylesheet" />')
+    $('head').append('<link class="darkcss" href="https://rawgit.com/ajdin1997/nexus-woot/master/nexus.css" type="text/css" rel="stylesheet" />')
     Nexus = {
         
         loaded: (typeof(Nexus) === "undefined" ? false : Nexus['loaded']),
@@ -267,20 +267,20 @@ if (Nexus['loaded']) {
                 var toggleStr = {
                     "autoWoot":"Auto Woot",
                     "autoJoin":"Auto DJ",
-                    "showMeh":"Show Meh votes",
-                    "showGrab":"Show Grabs",
-                    "allowRepeatMeh":"Show repeated Meh votes by a user",
-                    "allowRepeatGrab":"Show repeated Grabs by a user",
-                    "showUserJoin":"Show when users join the room",
-                    "showUserLeave":"Show when users leave the room",
-                    "showScriptChatMessages":"Show Nexus chat messages",
-                    "showChatUID":"Show user IDs in chat",
-                    "replaceImgLinks":"Embed images from image links"
+                    "showMeh":"Ko je Meh?",
+                    "showGrab":"Ko je Grab?",
+                    "allowRepeatMeh":"Pokazi uzastopno mehovanje korisnika",
+                    "allowRepeatGrab":"Pokazi uzastopno grabovanje od korisnika",
+                    "showUserJoin":"Pokazi kada korisnik udje u sobu",
+                    "showUserLeave":"Pokazi kada korisnik napusti sobu",
+                    "showScriptChatMessages":"Pokazi Nexus poruke u chatu",
+                    "showChatUID":"Pokazi korisnikov ID u chatu",
+                    "replaceImgLinks":"Pokazi kao sliku na chatu"
                 };
                 
                 var varStr = {
-                    "saveChatAmount":{name:"Chat save amount", min:0, max:512},
-                    "MAXMESSAGES":{name:"Max chat messages", min:1, max:512}
+                    "saveChatAmount":{name:"Sacuvaj poruke: ", min:0, max:512},
+                    "MAXMESSAGES":{name:"Maximalno cuvaj: ", min:1, max:512}
                 };
                 
                 var makeToggle = function(str, psk, state) { //setting string, internal name for it (Nexus.ps.???), true/false
@@ -384,7 +384,7 @@ if (Nexus['loaded']) {
                             .append($("<span>", {'class':'horiz-border'}))
                             .append($("<div>", {
                                 id:'nexus-who',
-                                text:'Nexus created by zeratul-'
+                                text:'Running Nexus'
                             }))
                             .append($("<div>", {
                                 id:'nexus-ver',
@@ -501,9 +501,9 @@ if (Nexus['loaded']) {
                 
                 if (chat[0].innerHTML !== '') {
                     var date = Nexus.fn.getTime(false);
-                    date = date.M+'/'+date.D+'/'+date.Y+' at '+date.h+':'+date.m+':'+date.s;
+                    date = date.M+'/'+date.D+'/'+date.Y+' u '+date.h+':'+date.m+':'+date.s;
                     chat.find('.cm.log').remove();
-                    chat.append('<div class="cm log ok"><div class="msg"><div class="text">Above messages saved on '+date+'</div></div></div>');
+                    chat.append('<div class="cm log ok"><div class="msg"><div class="text">POruke iznad sacuvane na dan '+date+'</div></div></div>');
                     
                     while (chat.children().length > Nexus.ps['saveChatAmount']) {
                         chat.children()[0].remove();
