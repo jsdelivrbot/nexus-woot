@@ -1,5 +1,8 @@
 # Nexus Woot
-Translated into Bosnian language, for more info contact the script developer.
+Translated into Bosnian language, for more info contact the script developer
+
+### Orginal Developer 
+- https://github.com/zeratul0
 
  # Usage
  
