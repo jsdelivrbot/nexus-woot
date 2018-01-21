@@ -374,7 +374,7 @@ if (Nexus['loaded']) {
                 }).height($('#chat').height() - 12)
                     .append($("<div>", {'class':'nexus-ui'})
                         .append($("<div>", {id:'nexus-menu'})
-                            .append($("<div>", {'class':'nexus-optn-header', text:'Nexus Settings'})
+                            .append($("<div>", {'class':'nexus-optn-header', text:'Nexus Postavke'})
                                 .prepend($("<span>", {'class':'horiz-border'}))
                                 .append($("<span>", {'class':'horiz-border'}))
                             ))
@@ -410,7 +410,7 @@ if (Nexus['loaded']) {
                     }
                 }
                 
-                $('#nexus-menu').append($("<div>", {'class':'nexus-optn-header-2', text:'Variables'})
+                $('#nexus-menu').append($("<div>", {'class':'nexus-optn-header-2', text:'Ostalo'})
                                 .prepend($("<span>", {'class':'horiz-border'}))
                                 .append($("<span>", {'class':'horiz-border'})))
                 
@@ -503,7 +503,7 @@ if (Nexus['loaded']) {
                     var date = Nexus.fn.getTime(false);
                     date = date.M+'/'+date.D+'/'+date.Y+' u '+date.h+':'+date.m+':'+date.s;
                     chat.find('.cm.log').remove();
-                    chat.append('<div class="cm log ok"><div class="msg"><div class="text">POruke iznad sacuvane na dan '+date+'</div></div></div>');
+                    chat.append('<div class="cm log ok"><div class="msg"><div class="text">Poruke iznad sacuvane na dan '+date+'</div></div></div>');
                     
                     while (chat.children().length > Nexus.ps['saveChatAmount']) {
                         chat.children()[0].remove();
