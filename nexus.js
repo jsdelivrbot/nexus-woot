@@ -5,7 +5,7 @@ if (Nexus === undefined)
 if (Nexus['loaded']) {
     console.error('Nexus failed to load, because it has already been loaded once during this session.');
 } else {
-    $('head').append('<link class="darkcss" href="https://rawgit.com/ajdin1997/nexus-woot/master/nexus.css" type="text/css" rel="stylesheet" />')
+    $('head').append('<link class="darkcss" href="https://cdn.jsdelivr.net/gh/ajdin1997/nexus-woot/nexus.css" type="text/css" rel="stylesheet" />')
     Nexus = {
         
         loaded: (typeof(Nexus) === "undefined" ? false : Nexus['loaded']),
